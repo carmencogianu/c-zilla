@@ -1,0 +1,48 @@
+.section-six{
+    height: 230px;
+    background-color: $gray-section;
+    text-align: center;
+    @include box-shadow;
+    .general-h2{
+        height: 80px;
+        br{
+            height: 0;
+        }
+    }
+    .paragraphs-container{
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        margin: 0 auto;
+    }
+}
+@media(max-width: $laptop-max) {
+    .section-six{
+        padding: 25px;
+        .general-h2{
+            margin-bottom: 10px;
+        }
+        .paragraphs-container{
+            margin-bottom: 30px;
+        }
+    }
+}
+@media(max-width: $phone-max){
+    .section-six{
+        padding: 20px;
+        height: 271px;
+        background-color: $gray-section;
+        text-align: center;
+        .general-h2{
+            height: 78px;
+            br{
+                height: 0;
+            }
+        }
+        .paragraphs-container{
+            height: 113px;
+            margin-bottom: 20px;
+        }
+      }
+}

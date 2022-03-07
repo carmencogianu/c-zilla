@@ -1,0 +1,54 @@
+.section-seven{
+    text-align: center;
+    .general-h2{
+        height: 41px;
+        margin-bottom: 50px;
+    }
+    .team-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        .member-card{
+            width: 270px;
+            .member-img{
+                border-radius: 50%;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            .double-height{
+                height: 66px;
+            }
+            .unique-height{
+                height: 56px;
+            }
+            .member-description{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media(max-width: $phone-max){
+    .section-seven{
+        .general-h2{
+            height: 35px;
+            margin-bottom: 30px;
+        }
+        .team-container{
+            gap: 30px;
+            .member-card{
+                width: 354px;
+                .general-h3{
+                  margin-bottom: 8px;
+                }
+                .double-height{
+                  height: 30px;
+                }
+                .unique-height{
+                    height: 28px;
+                }
+            }
+        }
+    }
+}

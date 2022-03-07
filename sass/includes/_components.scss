@@ -1,0 +1,103 @@
+// ***************************
+// BUTTONS
+// ***************************
+.btn {
+    background-color: $green-btn;
+    color: $button-text-color;
+    border: none;
+    border-radius: 5px;
+    font-family: $primary-font;
+    font-size: $desktop-fs;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 8px 24px 7px 24px;
+    line-height: $desktop-lh;
+    height: $desktop-h;
+}
+.blue-btn{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: $blue-btn;
+}
+@media(max-width: $phone-max) {
+    .btn {
+        font-size: $mobile-fs;
+        padding: 9px 24px;
+        line-height: $mobile-lh;
+        height: $mobile-h;
+    }
+}
+
+// ***************************
+// HEADINGS
+// ***************************
+//h1
+.general-h1{
+    height: $desktop-h1-h;
+}
+//h2
+.general-h2{
+    height: $desktop-h2-h;
+}
+.orange-h2{
+    color: $orange-h2;
+}
+.green-h2{
+    color: $green-h2;
+}
+//h3
+.general-h3{
+    height: $desktop-h3-h;
+    color: $blue-bg-text;
+    padding: 0;
+}
+.black-h3{
+    color: $black-h3;
+}
+//h4
+.general-h4{
+    height: $desktop-h4-h;
+    padding: 0;
+}
+@media(max-width: $phone-max) {
+    .general-h1{
+        height: $mobile-h1-h;
+    }
+    .general-h2{
+        height: $mobile-h2-h;
+    }
+    //h3
+    .general-h3{
+        height: $mobile-h3-h;
+    }
+    //h4
+    .general-h4{
+        height: $mobile-h4-h;
+    }
+}
+// ***************************
+// SECTIONS PADDING & MARGIN
+// ***************************
+.padding-tb{
+    padding: $padding-tb 0;
+}
+.padding-b{
+    padding: $padding-tb;
+}
+.margin-b{
+    margin-bottom: $padding-tb;
+}
+
+@media(max-width: $phone-max){
+    .padding-tb{
+        padding: $padding-tb-m 0;
+    }
+    .padding-b{
+        padding: $padding-tb-m;
+    }
+    .margin-b{
+        margin-bottom: $padding-tb-m;
+    }
+    
+}
+

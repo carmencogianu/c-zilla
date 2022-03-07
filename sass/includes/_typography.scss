@@ -1,0 +1,129 @@
+body {
+  color: $primary-text-color;
+  font-family: $primary-font;
+  font-weight: normal;
+  line-height: 1.2;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    * {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    // margin-bottom: 14px; COD INITIAL
+    
+    @media (max-width: $phone-max) {
+      font-size: 16px;
+      // margin-bottom: 12px; COD INITIAL
+    }
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 10px;
+    line-height: 61.28px;
+    color: #fff;
+    @media (max-width: $phone-max) {
+      font-size: 36px;
+      line-height: 49.03px;
+      // margin-bottom: 22px; COD INITIAL
+    }
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 40.85px;
+    color: #000;
+    // margin-bottom: 26px; COD INITIAL
+    @media (max-width: $phone-max) {
+      font-size: 26px;
+      line-height: 35.41px;
+
+      // margin-bottom: 20px; COD INITIAL
+    }
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32.68px;
+    margin-bottom: 5px;
+    // margin-bottom: 24px; COD INITIAL
+    @media (max-width: $phone-max) {
+      font-size: 22px;
+      // margin-bottom: 18px; COD INITIAL
+    }
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.24px;
+    margin-bottom: 5px;
+    // margin-bottom: 22px; COD INITIAL
+    @media (max-width: $phone-max) {
+      font-size: 18px;
+      line-height: 24.51px;
+      // margin-bottom: 16px; COD INITIAL
+    }
+  }
+  // h5 {
+  //   font-weight: 400;
+  //   font-size: 24px;
+  //   margin-bottom: 5px;
+  //   line-height: 32.68px;
+  //   // margin-bottom: 20px; COD INITIAL 
+  //   @media (max-width: $phone-max) {
+  //     font-size: 18px;
+  //     margin-bottom: 14px; COD INITIAL 
+  //   }
+  // }
+  // h6 {
+  //   font-weight: 400;
+  //   font-size: 20px;
+  //   margin-bottom: 5px;
+  //   line-height: 27.24px;
+  //   // margin-bottom: 18px;
+  //   @media (max-width: $phone-max) {
+  //     font-size: 16px;
+  //     margin-bottom: 12px; COD INITIAL 
+  //   }
+  // }
+  ul, ol {
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    // margin-bottom: 14px; COD INITIAL 
+    // li {
+    //   // margin-bottom: 4px; COD INITIAL
+    // }
+  }
+  ul {
+    list-style: disc inside;
+  }
+  ol {
+    list-style: decimal inside;
+  }
+  a {
+    color: $primary-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  strong, b {
+    font-weight: bold;
+  }
+  em, i {
+    font-style: italic;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

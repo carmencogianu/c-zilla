@@ -1,0 +1,25 @@
+.section-five{
+    background-image: url(../../assets/img/parallax.jpeg);
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -360px;
+    width: 1920px;
+}
+@media(max-width: $laptop-max) {
+    .section-five{
+        max-height: 400px;
+        margin-left: -100px;
+        width: 1200px;
+      }
+}
+@media(max-width: $phone-max){
+    .section-five{
+        max-height: 414.19px;
+        margin-left: 0;
+        background-size: contain;
+        width: 738px;
+      }
+}

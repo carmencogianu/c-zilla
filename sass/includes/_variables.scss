@@ -1,0 +1,62 @@
+// colors
+$ocean-blue: #009dc4;
+$sunny-yellow: #fff917;
+$blood-red: #980002;
+$cement: #a5a391;
+$paragraph-color: #000;
+$green-bg: #1abc9c;
+$blue-bg-text: #2980b9;
+$white-text: #fff;
+$gray-bg: #ecf0f1;
+$orange-h2: #d35400;
+$green-h2: #27ae60;
+$black-h3: #000;
+//text colors
+$primary-color: $ocean-blue;
+$secondary-color: $sunny-yellow;
+$primary-text-color: $paragraph-color;
+$secondary-text-color: $ocean-blue;
+$button-text-color: $white-text;
+//buttons colors
+$green-btn: $green-bg;
+$blue-btn: $blue-bg-text;
+//buttons line-heights & heights & font-sizes
+$mobile-lh: 21.79px;
+$desktop-lh: 24.51px;
+$mobile-h: 40px;
+$desktop-h: 40px;
+$mobile-fs: 16px;
+$desktop-fs: 18px;
+//headings heights
+//h1
+$mobile-h1-h: 49px;
+$desktop-h1-h: 61px;
+//h2
+$mobile-h2-h: 36px;
+$desktop-h2-h: 43px;
+//h3
+$mobile-h3-h: 30px;
+$desktop-h3-h: 33px;
+//h4
+$mobile-h4-h: 28px;
+$desktop-h4-h: 28px;
+//paddings & margins
+$padding-mobile: 30px;
+$padding-desktop: 50px;
+//top & bottom
+$padding-tb: $padding-desktop; 
+$padding-tb-m: $padding-mobile;
+
+//sections colors
+$gray-section: $gray-bg;
+// fonts
+$primary-font: "Open Sans", sans-serif;
+$secondary-font: "MyWebFont", sans-serif;
+// sizes
+$container: 1200px;
+$container-laptop: 1000px;
+$container-tablet: 750px;
+$laptop-max: 1367px;
+$tablet-max: 1024px;
+$phone-max: 768px;
+$phone-small-max: 320px;

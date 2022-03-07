@@ -1,0 +1,45 @@
+.section-two{
+    height: 326px;
+    padding: 50px;
+    background-color: $gray-section;
+    text-align: center;
+    @include box-shadow;
+
+    .paragraphs-container{
+        height: 203px;
+        margin-bottom: 20px;
+        :first-child{
+            padding-bottom: 30px;
+        }
+    }
+    .btn{
+        margin: 0 auto;
+    }
+}
+@media(max-width: $laptop-max) {
+    .section-two{
+        height: 326px;
+        padding: 25px;
+        .paragraphs-container{
+            height: auto;
+            :first-child{
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+@media(max-width: $phone-max){
+    .section-two{
+        height: 429px;
+        padding: 20px;
+        .green-h2{
+            height: 39px;
+        }
+        .paragraphs-container{
+            height: 310px;
+            :first-child{
+                padding-bottom: 15px;
+            }
+        }
+    } 
+}

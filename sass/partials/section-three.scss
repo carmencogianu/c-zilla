@@ -1,0 +1,24 @@
+.section-three{
+    text-align: right;
+    @include two-column-section;
+    img{
+        transform: scaleX(-1);
+    }
+}
+@media(max-width: $phone-max){
+    .section-three{
+        flex-direction: column-reverse;
+        text-align: left;
+        gap: 0;
+        .scooters-description p{
+          height: 113px;
+          overflow-y: hidden;
+        }
+        img{
+            display: block;
+            width: 738px;
+            height: 738px;
+            margin-bottom: 20px;
+        }
+      }
+}

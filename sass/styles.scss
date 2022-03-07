@@ -1,0 +1,34 @@
+// load includes
+@import "includes/reset";
+@import "includes/fonts";
+@import "includes/variables";
+@import "includes/mixins";
+@import "includes/typography";
+@import "includes/forms";
+@import "includes/general";
+@import "includes/components";
+// load partials
+@import "partials/*";
+
+.container{
+    box-sizing: border-box;
+    max-width: $container;
+    margin: 0 auto;
+
+    // &::after {
+    //   content: "";
+    //   clear: both;
+    //   display: table;
+    // }
+    @media(max-width: $laptop-max) {
+      max-width: $container-laptop;
+      // padding: 0 100px;
+    }
+    @media(max-width: $tablet-max) {
+      max-width: $container-tablet;
+    }
+    @media(max-width: $phone-max) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+}
