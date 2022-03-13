@@ -1,13 +1,84 @@
 .header {
-    .group-one{
+    .navbar{
         display: flex;
         padding: 20px 0;
         align-items: center;
         justify-content: space-between;
-        .header-logo{
+        gap: 30px;
+        .logo{
             width: 138px;
             height: 40px;
         }
     }
+    .nav-menu{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        padding-left: 0;
+        margin-left: 586px;
+        align-items: center;
+        .nav-link{
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+        }
+    }
+    .hamburger-menu{
+        display: none;
+        cursor: pointer;
+        .bar{
+            display: block;
+            width: 40px;
+            height: 4px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: #1abc9c;
+        }
+    }
 }
-
+@media(max-width: $laptop-max) {
+    .header {
+        .nav-menu{
+            margin-left: 359px;
+        }
+    }
+}
+@media(max-width: $phone-max){
+    .header{
+        .navbar{
+            padding: 15px 0;
+        }
+        .hamburger-menu{
+            display: block;
+            background-color:#ecf0f1;
+        }
+        .hamburger-menu.active .bar:nth-child(2){
+            display: none;
+        }
+        .hamburger-menu.active .bar:nth-child(1){
+            transform: translateY(5px) rotate(45deg);
+        }
+        .hamburger-menu.active .bar:nth-child(3){
+            transform: translateY(-5px) rotate(-45deg);
+        }
+        .nav-menu{
+            margin-left: 0;
+            position: absolute;
+            left: 0;
+            top: 70px;
+            gap: 0;
+            flex-direction: column;
+            width: 738px;
+            transition: 0.3s;
+            .nav-item{
+                margin: 15px 0;
+            }
+        }
+        .nav-menu.active{
+            align-items: end;
+            padding: 15px;
+            z-index: 3;
+            background-color: #ecf0f1;
+        }
+    }
+}

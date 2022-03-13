@@ -5,16 +5,28 @@
     <title>Codezilla internship - project 1</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <!-- ******HEADER****** -->
         <header class="header">
-            <div class="group-one">
-                <img class="header-logo" src="assets/img/logo-splash-osim-rgb2 2.png" alt="Splash logo">
-                <button class="btn">Ride me</button>
-            </div>
+            <nav class="navbar">
+                <img class="logo" src="assets/img/logo-splash-osim-rgb2 2.png" alt="Splash logo">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#jobs" class="nav-link">Jobs</a></li>
+                    <li class="nav-item"><a href="#cities" class="nav-link">Cities</a></li>
+                    <li class="nav-item"><a href="#charging" class="nav-link">Charging</a></li>   
+                    <button class="btn">Ride me</button>
+                </ul> 
+                <div class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </header>
 
         <!-- SECTION ONE-HERO -->
@@ -205,6 +217,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="app.js" ></script>
 </body>
 
 </html>
